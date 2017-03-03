@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+	<head>
+		<link href="Mall.css" rel="stylesheet" type="text/css">
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title> Gymnasiearbete </title>
+	</head>
+
+	<body onload="checkCookieFicklampa();">
+
+	<script type="text/javascript">
+
+         document.body.style.backgroundImage = "url(Bilder/ac2.jpeg)";
+
+		function getCookie(cname) {
+    			var name = cname + "=";
+    			var ca = document.cookie.split(';');
+    			for(var i = 0; i < ca.length; i++) {
+        			var c = ca[i];
+        				while (c.charAt(0) == ' ') {
+            				c = c.substring(1);
+        				}
+        			if (c.indexOf(name) == 0) {
+            			return c.substring(name.length, c.length);
+        			}
+    			}
+    			return "";
+			}
+
+
+			function checkCookieFicklampa() 
+			{
+    			var lampa = getCookie("ficklampa");
+    			if(lampa == "yes"){
+        			document.getElementById("ficklampa").style.display = "block";
+    			}
+    			else if(lampa == "no"){
+        			document.getElementById("ficklampa").style.display = "none";
+    			}
+    			else{
+       				document.getElementById("ficklampa").style.display = "none";
+       				document.cookie ="ficklampa = no; expires=Fri, 31 Dec 2021 12:00:00; path=/";	
+    			}
+
+    			checkCookieNyckel();
+
+			}
+
+			function checkCookieNyckel()
+			{
+    			
+    			var nyckel = getCookie("nyckel");
+    			if(nyckel == "yes"){
+        			document.getElementById("säkerhetsnyckel").style.display = "block";
+    			}
+    			else if(nyckel == "no"){
+        			document.getElementById("säkerhetsnyckel").style.display = "none";
+    			}
+    			else{
+       				document.getElementById("säkerhetsnyckel").style.display = "none";
+       				document.cookie ="nyckel = no; expires=Fri, 31 Dec 2021 12:00:00; path=/";	
+    			}
+
+    			checkCookiePistol();
+			}
+
+			function checkCookiePistol()
+			{
+				var pistol = getCookie("pistol");
+    			if(pistol == "yes"){
+        			document.getElementById("pistol").style.display = "block";
+    			}
+    			else if(pistol == "no"){
+        			document.getElementById("pistol").style.display = "none";
+    			}
+    			else{
+       				document.getElementById("pistol").style.display = "none";
+       				document.cookie ="pistol = no; expires=Fri, 31 Dec 2021 12:00:00; path=/";	
+    			}
+			}
+
+
+
+	</script>
+
+		<div id="Bakgrund">
+				<a href="Index.html"> <div id="länkruta"> Starta om </div> </a>
+
+				<div id="storyruta">
+					<div id="textruta">
+						Du hade kanske förväntat dig någonting spännande. Visserligen är rummet med ett teleskop i centrum vackert, men härifrån kan du inte ta dig vidare. Ändå stannar du en stund och slappnar av. Om du bara hade kunnat stanna här för alltid...
+					</div>
+					 <div class="btn">
+						<a href="AC1.html"> Du får väl ta och gå tillbaka... </a>
+					</div>
+					
+					
+
+				</div>
+
+				<div id="itemBox"> 
+					<h1> Föremål </h1>
+					<div class = "itemText" id="ficklampa"> Ficklampa </div>
+					<div class = "itemText" id="säkerhetsnyckel"> Säkerhetsnyckel </div>
+					<div class = "itemText" id="pistol"> Pistol </div>
+				</div>
+
+		</div>
+    
+       
+
+
+    </body>
+</html>
