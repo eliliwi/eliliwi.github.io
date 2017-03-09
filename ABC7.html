@@ -53,6 +53,11 @@
     			var nyckel = getCookie("nyckel");
     			if(nyckel == "yes"){
         			document.getElementById("säkerhetsnyckel").style.display = "block";
+				var settvaktrum = getCookie("settvaktrum");
+				if(settvaktrum == "yes")
+				{
+					document.getElementById("settvaktrum").innerHTML = "Det var hit personen sprang";
+				}
     			}
     			else if(nyckel == "no"){
         			document.getElementById("säkerhetsnyckel").style.display = "none";
@@ -89,17 +94,18 @@
 
 				<div id="storyruta">
 					<div id="textruta">
-						"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+						Du kommer till en korsning och du tänker: “Om jag någonsin träffar arkitekten av denna jäkla station så kommer jag sätta den personen i en labyrint med bara korsningar av olika slag i sig, för det här börjar bli löjligt”. Två av vägarna du kan ta har inte någon text eller skylt vid sig men den tredje har en skylt som säger “Vaktrum” med en pil nedför hallen. En av hallarna har blivit lite skadade.
+
 					</div>
 					 <div class="btn">
-						<a href="ABC5.html">Du gör ett val som kräver lång text</a>
+						<a href="ABC5.html">Du tar dina chanser med den oskadade hallen</a>
 					</div>
 					
 					<div class="btn">
-						<a href="ABCIT2.html">Du gör ett val som kräver lång text </a>
+						<a href="ABCIT2.html">Vaktrummet kan vara bra att undersöka </a>
 					</div>
-					<div class="btn">
-						<a href="ABCI3.html"> Du gör ett val som kräver lång text </a>
+					<div class="btn" id="settvaktrum">
+						<a href="ABCI3.html"> Varför är hallen skadad? </a>
 					</div>
 
 				</div>
