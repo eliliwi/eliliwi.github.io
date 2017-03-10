@@ -83,7 +83,22 @@
        				document.getElementById("pistol").style.display = "none";
        				document.cookie ="pistol = no; expires=Fri, 31 Dec 2021 12:00:00; path=/";	
     			}
+				checkcookieroom();
 			}
+		
+		function checkcookieroom()
+		{
+			var rum = getCookie("lastroom");
+			if(rum == "abc4")
+			{
+				document.getElementById("luckval").innerHTML = "Tillbaka till luckan ska jag gå!";
+			}
+		}
+		
+		function setlastroom()
+		{
+			document.cookie ="lastroom = abc7; expires=Fri, 31 Dec 2021 12:00:00; path=/";
+		}	
 
 
 
@@ -97,7 +112,7 @@
 						Du kommer till en korsning och du tänker: “Om jag någonsin träffar arkitekten av denna jäkla station så kommer jag sätta den personen i en labyrint med bara korsningar av olika slag i sig, för det här börjar bli löjligt”. Två av vägarna du kan ta har inte någon text eller skylt vid sig men den tredje har en skylt som säger “Vaktrum” med en pil nedför hallen. En av hallarna har blivit lite skadade.
 
 					</div>
-					 <div class="btn">
+					 <div class="btn" id="luckval" onClick="setlastroom()">
 						<a href="ABC5.html">Du tar dina chanser med den oskadade hallen</a>
 					</div>
 					
