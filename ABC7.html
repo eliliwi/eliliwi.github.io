@@ -89,10 +89,15 @@
 		function checkcookieroom()
 		{
 			var rum = getCookie("lastroom");
-			if(rum == "abc4" || rum =="abc7")
+			if(rum == "abc4")
 			{
 				document.getElementById("luckval").innerHTML = "<a href='ABC5.html'>Tillbaka till luckan ska jag gå! </a>";
 			}
+			else if(rum == "abc7")
+			{
+				document.getElementById("luckval").innerHTML = "<a href='ABC5.html'>Tillbaka till luckan ska jag gå! </a>";
+			}
+			
 		}
 		
 		function setlastroom()
