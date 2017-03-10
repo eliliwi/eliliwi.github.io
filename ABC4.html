@@ -13,72 +13,90 @@
 
          document.body.style.backgroundImage = "url(https://lh5.googleusercontent.com/pxx3Qw9zsNNHlHYZDHih_m3m6_yw0ntasOD8JovJX53Jdq-M6abuDCD8XOqP21vGLHteMHE0SqKOZn4=w1366-h633)";
 
-		function getCookie(cname) {
+		function getCookie(cname)
+		{
     			var name = cname + "=";
     			var ca = document.cookie.split(';');
-    			for(var i = 0; i < ca.length; i++) {
+    			for(var i = 0; i < ca.length; i++)
+			{
         			var c = ca[i];
-        				while (c.charAt(0) == ' ') {
-            				c = c.substring(1);
+        				while (c.charAt(0) == ' ')
+					{
+            					c = c.substring(1);
         				}
-        			if (c.indexOf(name) == 0) {
+        			if (c.indexOf(name) == 0)
+				{
             			return c.substring(name.length, c.length);
         			}
     			}
     			return "";
-			}
+		}
 
 
-			function checkCookieFicklampa() 
-			{
+		function checkCookieFicklampa() 
+		{
     			var lampa = getCookie("ficklampa");
     			if(lampa == "yes"){
         			document.getElementById("ficklampa").style.display = "block";
     			}
-    			else if(lampa == "no"){
+    			else if(lampa == "no")
+			{
         			document.getElementById("ficklampa").style.display = "none";
     			}
-    			else{
+    			else
+			{
        				document.getElementById("ficklampa").style.display = "none";
        				document.cookie ="ficklampa = no; expires=Fri, 31 Dec 2021 12:00:00; path=/";	
     			}
 
     			checkCookieNyckel();
 
-			}
+		}
 
-			function checkCookieNyckel()
-			{
+		function checkCookieNyckel()
+		{
     			
     			var nyckel = getCookie("nyckel");
-    			if(nyckel == "yes"){
+    			if(nyckel == "yes")
+			{
         			document.getElementById("säkerhetsnyckel").style.display = "block";
     			}
-    			else if(nyckel == "no"){
+    			else if(nyckel == "no")
+			{
         			document.getElementById("säkerhetsnyckel").style.display = "none";
     			}
-    			else{
+    			else
+			{
        				document.getElementById("säkerhetsnyckel").style.display = "none";
        				document.cookie ="nyckel = no; expires=Fri, 31 Dec 2021 12:00:00; path=/";	
     			}
 
     			checkCookiePistol();
-			}
+		}
 
-			function checkCookiePistol()
+		function checkCookiePistol()
+		{
+			var pistol = getCookie("pistol");
+    			if(pistol == "yes")
 			{
-				var pistol = getCookie("pistol");
-    			if(pistol == "yes"){
         			document.getElementById("pistol").style.display = "block";
     			}
-    			else if(pistol == "no"){
+    			else if(pistol == "no")
+			{
         			document.getElementById("pistol").style.display = "none";
     			}
-    			else{
+    			else
+			{
        				document.getElementById("pistol").style.display = "none";
        				document.cookie ="pistol = no; expires=Fri, 31 Dec 2021 12:00:00; path=/";	
     			}
-			}
+		}
+		
+		function setlastroom()
+		{
+			document.cookie ="lastroom = abc4; expires=Fri, 31 Dec 2021 12:00:00; path=/";
+		}
+		
 
 
 
@@ -91,7 +109,7 @@
 					<div id="textruta">
 						Du kommer in i ett rum och går in till mitten. Du ställer dig för att kolla omkring i rummet. Från vad du kan se så var rummet använt som tillfällig sovplats då det finns enkla sängar uppsatta här och där i rummet. Någon ser ut att ha vält en av de tillfälliga sängarna, kanske behövde skynda till jobbet? Eller var det ett bråk eller strid här inne? Inget annat än den välta sängen säger dig att det har varit en konfrontering här inne så det är troligast att inget har hänt. Med rummets innehåll undersökt så vänder du din uppmärksamhet till att välja vart du ska gå. Du märker att dörrarna här har en färgmarkering ovanför sig: Röd, blå, grön och brun. Efter att du vände och vred dig för att undersöka rummet så har du glömt vilket håll du kom från. Dina val har även begränsats då elen till röd och blå är så svag att knapparna knappt lyser så maskineriet kan inte heller öppna dörren längre.
 					</div>
-					 <div class="btn">
+					 <div class="btn" onClick="setlastroom()">
 						<a href="ABC5.html">Då får det bli den gröna dörren</a>
 					</div>
 					
