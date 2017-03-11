@@ -70,7 +70,10 @@
 				var pistol = getCookie("pistol");
     			if(pistol == "yes"){
         			document.getElementById("pistol").style.display = "block";
-    			}
+				document.getElementById("textruta").innerHTML = "Ditt första skott träffar den röda delen av varelsen och andra skottet träffar strax bredvid och ger av några gnistor vilket antänder något som snabbt skapar en explosion som totalförstör varelsen och chockvågen knockar dig in i vägen och du förlorar medvetandet. När du återfår medvetandet så har vad du tror är solen kommit runt planeten och nu lyser in genom stationens fönster. Du reser dig och kollar dig omkring i hallen som du tidigare inte kunde undersöka. En bit bort ser du en dörr och du går till den och kollar in igenom den. Du ser kommunikationsutrustning och ser ut att fungera.";
+    				document.getElementById("ge2").innerHTML = "<a href='GE2.html'> Du kan säkert använda utrustningen </a>";
+				document.getElementById("abcit3").innerHTML = "<a href='ABCIT3.html'> Du går vidare i hopp om något bättre </a>";
+			}
     			else if(pistol == "no"){
         			document.getElementById("pistol").style.display = "none";
     			}
@@ -89,14 +92,14 @@
 
 				<div id="storyruta">
 					<div id="textruta">
-						"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+						Du springer snabbare än du någonsin har gjort innan i ditt liv. Efter ett tiotal meter så ser du en dörröppning. Du har bara några sekunder innan du kommer ha sprungit förbi dörren så du måste välja snabbt, fortsätt springa eller in i rummet och hoppas på att man kan låsa dörren om den ens har en dörr.
 					</div>
-					 <div class="btn">
-						<a href="GE2.html"> Du gör ett val som kräver lång text </a>
+					 <div class="btn" id="ge2">
+						<a href="GE2.html"> Du väljer dörröppningen </a>
 					</div>
 					
-					<div class="btn">
-						<a href="ABCIT3.html"> Du gör ett val som kräver lång text </a>
+					<div class="btn" id="abcit3">
+						<a href="ABCIT3.html"> Du vet inte om dörren kan låsas; den risken tar du inte </a>
 					</div>
 					
 				</div>
