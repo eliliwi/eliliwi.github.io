@@ -70,21 +70,20 @@
 				var pistol = getCookie("pistol");
     			if(pistol == "yes"){
         			document.getElementById("pistol").style.display = "block";
-                    document.getElementById("val1").innerHTML = " bra slut du har pistol";
-                    document.getElementById("val2").innerHTML = " dåligt slut du har pistol";
-                    document.getElementById("val3").innerHTML = " dåligt slut du har pistol";
+                    		document.getElementById("val1").innerHTML = "<a href='GE3.html'> Skjut mot varelsens 'handled' </a>";
+                    		document.getElementById("val2").innerHTML = "<a href='BE6.html'> Skjut mot dess huvud </a>";
+                    		document.getElementById("val3").innerHTML = "<a href='BE6.html'> Skjut mot dess axel </a>";
+				document.getElementById("textruta").innerHTML = "Efter en lång tid av vandrande kommer du till vad som ser ut att vara en återvändsgränd. Efter att du undersöker vägarna i hopp om något gömt så trycker du in en panel av misstag vilket öppnar en gömd dörr. När du börjar gå in så känner du hur något tar tag i ditt ben och välter omkull dig. När du vänder dig för att se vad det är så ser du vad som ser ut att vara en nybildad men inte färdig varelse från innan. Med adrenalinet strömmande genom din kropp så tar du upp gör du redo din plan för att komma loss och ta skydd i rummet.";
     			}
     			else if(pistol == "no"){
         			document.getElementById("pistol").style.display = "none";
-                    document.getElementById("val1").innerHTML = " bra slut du har inte pistol";
-                    document.getElementById("val2").innerHTML = " bra slut du har inte pistol";
-                    document.getElementById("val3").innerHTML = " bra slut du har inte pistol";
+                    
     			}
     			else{
        				document.getElementById("pistol").style.display = "none";
        				document.cookie ="pistol = no; expires=Fri, 31 Dec 2021 12:00:00; path=/";	
     			}
-			}
+		}
 
 
 
@@ -95,17 +94,18 @@
 
 				<div id="storyruta">
 					<div id="textruta">
-						"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+						Efter att du har sprungit vidare så ser du en återvändsgränd. Du springer rakt mot väggen och ställer dig med ryggen mot väggen med din tur så lyckas du trycka in en panel som öppnar upp ett gömt rum men innan då hinner ta dig in så känner du hur något tar tag i ditt ben och välter dig. Du vänder dig för att se att varelsen har slängt sig för att ta tag i dig. Du måste få dig loss snabbt innan den dödar dig.
+
 					</div>
 					 <div class="btn" id="val1">
-						<a href="GE3.html"> Du gör ett val som kräver lång text </a>
+						<a href="GE3.html"> Sparka mot armen, den kanske släpper dig </a>
 					</div>
 					
 					<div class="btn" id="val2">
-						<a href="BE6.html"> Du gör ett val som kräver lång text </a>
+						<a href="BE6.html"> Sparka mot dess huvud </a>
 					</div>
 					<div class="btn" id="val3">
-						<a href="BE6.html"> Du gör ett val som kräver lång text </a>
+						<a href="BE6.html"> Om du sparkar mot dess axel går den kanske ur led </a>
 					</div>
 
 				</div>
