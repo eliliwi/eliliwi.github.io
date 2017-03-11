@@ -70,6 +70,9 @@
 				var pistol = getCookie("pistol");
     			if(pistol == "yes"){
         			document.getElementById("pistol").style.display = "block";
+				doucument.getElementById("abc41").innerHTML= "<a href='BE4.html'>Du siktar mot huvudet </a>";
+				doucument.getElementById("abc42").innerHTML= "<a href='BE4.html'> Du siktar mot benen </a>";
+				doucument.getElementById("abc9").innerHTML= "<a href='ABC9.html'> Försök att springa iväg ändå </a>";
     			}
     			else if(pistol == "no"){
         			document.getElementById("pistol").style.display = "none";
@@ -91,15 +94,15 @@
 					<div id="textruta">
 						"När du går igenom den inte färdigbyggda delen av stationen så märker du hur det finns mer av dem där växterna på väggarna, taket och lite på golvet. plötsligt så hör du hur något knakar till och du vänder dig för att se en ~2 meter lång humanoid växtliknande varelse som går emot dig du bestämmer dig för att detta måste vara vad som har fört bort eller dödat alla på stationen. Varelsens snabbhet gör det tydligt för dig att du inte kommer kunna springa ifrån den även om du sprang det snabbaste du kan."
 					</div>
-					 <div class="btn">
-						<a href="BE4.html">Du gör ett val som kräver lång text </a>
+					 <div class="btn" id="be41">
+						<a href="BE4.html">Slå den med all styrka i ansiktet </a>
 					</div>
 					
-					<div class="btn">
-						<a href="BE4.html"> Du gör ett val som kräver lång text </a>
+					<div class="btn" id="be42">
+						<a href="BE4.html"> Försök att tackla varelsen och slå den då </a>
 					</div>
-					<div class="btn">
-						<a href="ABC9.html"> Du gör ett val som kräver lång text </a>
+					<div class="btn" id="abc9">
+						<a href="ABC9.html"> Försök att springa iväg ändå </a>
 					</div>
 
 				</div>
