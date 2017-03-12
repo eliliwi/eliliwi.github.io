@@ -161,6 +161,9 @@ h1{
 	#textrutaLång{
 		height:450px;
 	}
+	#storyRutaLång{
+		height:700px;
+	}
 }
 @media screen and (max-width: 1050px)
 {
@@ -215,6 +218,9 @@ h1{
 		width:90%;
 		margin-left:5%;
 		margin-top: 15px;
+	}
+	#infoRutaLång{
+		height:850px;
 	}
 	#textrutaLång{
 		height:550px;
@@ -312,6 +318,9 @@ h1{
 		margin-left: 5%;
 	}
 	#storyrutaLång{
+		height:910px;
+	}
+	#infoRutaLång{
 		height:910px;
 	}
 	#textrutaLång{
