@@ -25,13 +25,22 @@ body{
 	float:left;
 	margin-top: 100px;
 }
+#infoRutaLång{
+	background-color:rgba(255,255,255, 0.5);
+	width:80%;
+	height:450px;
+	margin-left:10%;
+	border-radius:30px;
+	float:left;
+	margin-top: 100px;
+}
 
 
 #länkruta{
 	width:15%;
 	height:60px;
 	float:left;
-	font-family: Lucida Calligraphy;
+	
 	font-size:34px;
 	color:white;
 }
@@ -49,7 +58,7 @@ body{
 #textruta{
 	
 	width: 80%;
-	font-family: Lucida Calligraphy;
+	
 	height: 200px;
 	margin-left:10%;
 	margin-top:30px;
@@ -78,7 +87,7 @@ body{
 }
 #textrutaLång{
 	width: 80%;
-	font-family: Lucida Calligraphy;
+	
 	height: 350px;
 	margin-left:10%;
 	margin-top:30px;
@@ -91,7 +100,7 @@ body{
 	height:50px;
 	margin-left:20%;
 	margin-top:5px;
-	font-family: Lucida Calligraphy;
+	
 	font-size: 18px;
 	text-decoration: none;
 	float: left;
@@ -129,7 +138,7 @@ a:active{
 
 h1{
 	color:black;
-	font-family: Lucida Calligraphy;
+	
 	font-size:22px;
 	margin-top:5px;
 	margin-left: 40px;
@@ -138,7 +147,7 @@ h1{
 
 .itemText{
 	color:black;
-	font-family: Lucida Calligraphy;
+	
 	font-size:20px;
 	margin-top:5px;
 	margin-left: 20px;
