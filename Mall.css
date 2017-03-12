@@ -58,7 +58,7 @@ body{
 #textruta{
 	
 	width: 80%;
-	font-size: 16px;
+	font-size: 18px;
 	height: 200px;
 	margin-left:10%;
 	margin-top:30px;
@@ -271,18 +271,22 @@ h1{
 	}
 	#länkruta{
 		width: 100px;
-		font-size:18px;
+		
+		
+		
+		
+		:18px;
 	}
 	
 	#textruta{
-		font-size: 15px;
+		font-size: 16px;
 	}
 	.btn{
-		font-size:15px;
+		font-size:16px;
 		margin-top:60px;
 	}
 	#textrutaLång{
-		font-size:15px;
+		font-size:16px;
 	}
 }
 @media screen and (max-width: 480px){
