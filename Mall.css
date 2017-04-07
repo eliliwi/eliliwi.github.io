@@ -68,13 +68,13 @@ body{
 /* Chrome, Safari, Opera */
 @-webkit-keyframes shadowH {
     50% {text-shadow: 3px 3px 2px rgb(130,0,0);}
-    50% {font-size: 20px;}
+    50% {font-size: 16px;}
 }
 
 /* Standard syntax */
 @keyframes shadowH {
     50% {text-shadow: 3px 3px 2px rgb(130,0,0);}
-    50% {font-size: 20px;}
+    50% {font-size: 16px;}
 }
 #storyrutaLång{
 	background-color:rgba(255,255,255, 0.5);
@@ -123,8 +123,8 @@ a:active{
 }
 
 .btn:hover{
-	-webkit-animation: shadowH 2s infinite; /* Chrome, Safari, Opera */
-    animation: shadowH 2s infinite;
+	-webkit-animation: shadowH 4s infinite; /* Chrome, Safari, Opera */
+    animation: shadowH 4s infinite;
 	animation-timing-function: ease-out; 
 }
 
