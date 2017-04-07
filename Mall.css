@@ -68,13 +68,13 @@ body{
 /* Chrome, Safari, Opera */
 @-webkit-keyframes shadowH {
     50% {text-shadow: 3px 3px 2px rgb(130,0,0);}
-    50% {font-size: 16px;}
+    50% {font-size: 18px;}
 }
 
 /* Standard syntax */
 @keyframes shadowH {
     50% {text-shadow: 3px 3px 2px rgb(130,0,0);}
-    50% {font-size: 16px;}
+    50% {font-size: 18px;}
 }
 #storyrutaLång{
 	background-color:rgba(255,255,255, 0.5);
