@@ -123,8 +123,8 @@ a:active{
 }
 
 .btn:hover{
-	-webkit-animation: shadowH 4s infinite; /* Chrome, Safari, Opera */
-    animation: shadowH 4s infinite;
+	-webkit-animation: shadowH 3s infinite; /* Chrome, Safari, Opera */
+    animation: shadowH 3s infinite;
 	animation-timing-function: ease-out; 
 }
 
