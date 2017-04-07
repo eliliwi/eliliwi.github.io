@@ -74,7 +74,7 @@ body{
 /* Standard syntax */
 @keyframes shadowH {
     50% {text-shadow: 3px 3px 2px rgb(0,0,130);}
-	50% {font-style: italic;}
+	
 }
 #storyrutaLång{
 	background-color:rgba(255,255,255, 0.5);
