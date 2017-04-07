@@ -125,6 +125,7 @@ a:active{
 .btn:hover{
 	-webkit-animation: shadowH 4s infinite; /* Chrome, Safari, Opera */
     animation: shadowH 4s infinite;
+	animation-delay: 2s; 
 }
 
 #itemBox{
